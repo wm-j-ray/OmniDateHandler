@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--OmniDateHandlerViewController-->
@@ -17,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="UtO-2X-GFP">
-                                <rect key="frame" x="0.0" y="20" width="600" height="216"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="UtO-2X-GFP">
+                                <rect key="frame" x="40" y="20" width="520" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="491165068.02370101">
                                     <!--2016-07-25 18:44:28 +0000-->
                                 </date>
@@ -26,10 +27,146 @@
                                     <action selector="datePickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="JyB-Ki-dBH"/>
                                 </connections>
                             </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="21U-At-Ic2" userLabel="Row One">
+                                <rect key="frame" x="40" y="227" width="520" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inD-33-QDN">
+                                        <rect key="frame" x="0.0" y="10" width="173" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.30128967400000001" blue="0.1709064283" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="pmZ-uN-5gq"/>
+                                        </constraints>
+                                        <state key="normal" title="Clear"/>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="10" width="107" height="60"/>
+                                        </variation>
+                                        <variation key="widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="10" width="240" height="60"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="clearBtnHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gcu-E0-E4Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24h-C9-PQv">
+                                        <rect key="frame" x="173" y="10" width="174" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.30128967400000001" blue="0.1709064283" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ceW-LQ-Bti"/>
+                                        </constraints>
+                                        <state key="normal" title="+1 Day"/>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="107" y="10" width="106" height="60"/>
+                                        </variation>
+                                        <variation key="widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="240" y="10" width="240" height="60"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="dayBtnHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1LG-N2-k18"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69C-H1-9x3">
+                                        <rect key="frame" x="347" y="10" width="173" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.30128967400000001" blue="0.1709064283" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ng3-UD-EHw"/>
+                                        </constraints>
+                                        <state key="normal" title="Weekend"/>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="213" y="10" width="107" height="60"/>
+                                        </variation>
+                                        <variation key="widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="480" y="10" width="240" height="60"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="weekendBtnHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jeK-mm-DF3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6SN-Ww-Bvj"/>
+                                </constraints>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="40" y="227" width="320" height="80"/>
+                                </variation>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="40" y="227" width="720" height="80"/>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IHO-kl-K7P" userLabel="Row Two">
+                                <rect key="frame" x="40" y="298" width="520" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4Y-Hs-O2D">
+                                        <rect key="frame" x="0.0" y="10" width="173" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.30128967403506834" blue="0.17090642831360481" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="UKa-ql-VRy"/>
+                                        </constraints>
+                                        <state key="normal" title="+ 1 Week"/>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="10" width="107" height="60"/>
+                                        </variation>
+                                        <variation key="widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="10" width="240" height="60"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="weekBtnHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bb-AB-GSb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bla-z9-K3w">
+                                        <rect key="frame" x="173" y="10" width="174" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.30128967400000001" blue="0.1709064283" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="m00-UF-f2n"/>
+                                        </constraints>
+                                        <state key="normal" title="+1 Month"/>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="107" y="10" width="106" height="60"/>
+                                        </variation>
+                                        <variation key="widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="240" y="10" width="240" height="60"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="monthBtnHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jF9-nF-2wJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP7-cN-y7R">
+                                        <rect key="frame" x="347" y="10" width="173" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.30128967400000001" blue="0.1709064283" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="sOh-sQ-cKK"/>
+                                        </constraints>
+                                        <state key="normal" title="+1 Year"/>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="213" y="10" width="107" height="60"/>
+                                        </variation>
+                                        <variation key="widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="480" y="10" width="240" height="60"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="yearBtnHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vEG-jX-izX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="vOU-Cv-GXf"/>
+                                </constraints>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="40" y="298" width="320" height="80"/>
+                                </variation>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="40" y="298" width="720" height="80"/>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UtO-2X-GFP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9f8-H4-9u1"/>
+                            <constraint firstItem="UtO-2X-GFP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="1Q9-BC-gq9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UtO-2X-GFP" secondAttribute="trailing" constant="20" id="BJK-7p-MrA"/>
+                            <constraint firstItem="21U-At-Ic2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Gmm-MJ-ddw"/>
+                            <constraint firstItem="IHO-kl-K7P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="STY-fl-vhC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IHO-kl-K7P" secondAttribute="trailing" constant="20" id="pBw-q6-se1"/>
+                            <constraint firstItem="UtO-2X-GFP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tFN-QM-mef"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="21U-At-Ic2" secondAttribute="trailing" constant="20" id="u26-jc-tyj"/>
                         </constraints>
                     </view>
                     <connections>
@@ -38,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238" y="330"/>
+            <point key="canvasLocation" x="244" y="290"/>
         </scene>
     </scenes>
 </document>
