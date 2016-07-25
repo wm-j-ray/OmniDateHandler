@@ -8,16 +8,31 @@
 
 import UIKit
 
-class OmniDateHandlerViewController: UIViewController {
+protocol OmniDateHandlerViewControllerInput
+{
+    func initializationDate(initialDate: NSDate)
+}
+
+protocol OmniDateHandlerViewControllerOutput
+{
+    func selectedDate(selectedDate:NSDate, wasCleared:Bool)
+}
+
+
+class OmniDateHandlerViewController: UIViewController, OmniDateHandlerViewControllerInput {
     
     @IBOutlet weak var datePicker: UIDatePicker!
+    var output: OmniDateHandlerViewControllerOutput!
+    
     var dateFormatter = NSDateFormatter()
     var selectedDate = NSDate()
+    var wasCleared = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        //output.selectedDate(selectedDate, wasCleared:wasCleared)
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,6 +52,11 @@ class OmniDateHandlerViewController: UIViewController {
         
     }
     
+    
+    // ============================================================================= //
+    // MARK: - Helpers
+    // ============================================================================= //
+    
     func printDate(aDate:NSDate) {
         dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
         let strDate = dateFormatter.stringFromDate(aDate)
@@ -55,7 +75,18 @@ class OmniDateHandlerViewController: UIViewController {
         printDate(aDate)
         setDial(aDate)
         setDateSelected(aDate)
+        wasCleared = false
     }
+    
+    
+    // ============================================================================= //
+    // MARK: - Protocol Conformance
+    // ============================================================================= //
+    
+    func initializationDate(initialDate: NSDate) {
+        selectedDate = initialDate
+    }
+    
     
     
     // ============================================================================= //
@@ -63,7 +94,8 @@ class OmniDateHandlerViewController: UIViewController {
     // ============================================================================= //
     
     @IBAction func clearBtnHit(sender: AnyObject) {
-        syncDates(NSDate())
+        setDial(NSDate())
+        wasCleared=true
     }
     
     @IBAction func dayBtnHit(sender: AnyObject) {
