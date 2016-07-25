@@ -27,10 +27,10 @@
                                     <action selector="datePickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="JyB-Ki-dBH"/>
                                 </connections>
                             </datePicker>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="21U-At-Ic2" userLabel="Row One">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="21U-At-Ic2" userLabel="Row One">
                                 <rect key="frame" x="40" y="227" width="520" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inD-33-QDN">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inD-33-QDN">
                                         <rect key="frame" x="0.0" y="10" width="173" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.30128967400000001" blue="0.1709064283" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -47,7 +47,7 @@
                                             <action selector="clearBtnHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gcu-E0-E4Z"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24h-C9-PQv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24h-C9-PQv">
                                         <rect key="frame" x="173" y="10" width="174" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.30128967400000001" blue="0.1709064283" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -64,7 +64,7 @@
                                             <action selector="dayBtnHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1LG-N2-k18"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69C-H1-9x3">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69C-H1-9x3">
                                         <rect key="frame" x="347" y="10" width="173" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.30128967400000001" blue="0.1709064283" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -92,10 +92,10 @@
                                     <rect key="frame" x="40" y="227" width="720" height="80"/>
                                 </variation>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IHO-kl-K7P" userLabel="Row Two">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IHO-kl-K7P" userLabel="Row Two">
                                 <rect key="frame" x="40" y="298" width="520" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4Y-Hs-O2D">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4Y-Hs-O2D">
                                         <rect key="frame" x="0.0" y="10" width="173" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.30128967403506834" blue="0.17090642831360481" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -112,7 +112,7 @@
                                             <action selector="weekBtnHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bb-AB-GSb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bla-z9-K3w">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bla-z9-K3w">
                                         <rect key="frame" x="173" y="10" width="174" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.30128967400000001" blue="0.1709064283" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -129,7 +129,7 @@
                                             <action selector="monthBtnHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jF9-nF-2wJ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP7-cN-y7R">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP7-cN-y7R">
                                         <rect key="frame" x="347" y="10" width="173" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.30128967400000001" blue="0.1709064283" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -164,6 +164,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="UtO-2X-GFP" secondAttribute="trailing" constant="20" id="BJK-7p-MrA"/>
                             <constraint firstItem="21U-At-Ic2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Gmm-MJ-ddw"/>
                             <constraint firstItem="IHO-kl-K7P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="STY-fl-vhC"/>
+                            <constraint firstItem="IHO-kl-K7P" firstAttribute="top" secondItem="UtO-2X-GFP" secondAttribute="bottom" constant="62" id="lQZ-Cw-cQM"/>
+                            <constraint firstItem="21U-At-Ic2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="207" id="p8T-dI-lgi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IHO-kl-K7P" secondAttribute="trailing" constant="20" id="pBw-q6-se1"/>
                             <constraint firstItem="UtO-2X-GFP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tFN-QM-mef"/>
                             <constraint firstAttribute="trailingMargin" secondItem="21U-At-Ic2" secondAttribute="trailing" constant="20" id="u26-jc-tyj"/>
