@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1D867D1D4696B600721FE4 /* OmniDateHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1D867C1D4696B600721FE4 /* OmniDateHandlerViewController.swift */; };
 		0B8D118B1D4692F8001EAAF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8D118A1D4692F8001EAAF6 /* AppDelegate.swift */; };
 		0B8D118D1D4692F8001EAAF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8D118C1D4692F8001EAAF6 /* ViewController.swift */; };
 		0B8D11901D4692F8001EAAF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D118E1D4692F8001EAAF6 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		0B8D11951D4692F8001EAAF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B8D11931D4692F8001EAAF6 /* LaunchScreen.storyboard */; };
 		0B8D11A01D4692F8001EAAF6 /* OmniDateHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8D119F1D4692F8001EAAF6 /* OmniDateHandlerTests.swift */; };
 		0B8D11AB1D4692F8001EAAF6 /* OmniDateHandlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8D11AA1D4692F8001EAAF6 /* OmniDateHandlerUITests.swift */; };
+		0B8D11BC1D4693B2001EAAF6 /* OmniDateHandlerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8D11BB1D4693B2001EAAF6 /* OmniDateHandlerWorker.swift */; };
+		0B8D11BE1D469415001EAAF6 /* AFDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8D11BD1D469415001EAAF6 /* AFDateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B1D867C1D4696B600721FE4 /* OmniDateHandlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmniDateHandlerViewController.swift; sourceTree = "<group>"; };
 		0B8D11871D4692F8001EAAF6 /* OmniDateHandler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmniDateHandler.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B8D118A1D4692F8001EAAF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B8D118A1D4692F8001EAAF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = OmniDateHandler/AppDelegate.swift; sourceTree = "<group>"; };
 		0B8D118C1D4692F8001EAAF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B8D118F1D4692F8001EAAF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B8D11911D4692F8001EAAF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		0B8D11A61D4692F8001EAAF6 /* OmniDateHandlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmniDateHandlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B8D11AA1D4692F8001EAAF6 /* OmniDateHandlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmniDateHandlerUITests.swift; sourceTree = "<group>"; };
 		0B8D11AC1D4692F8001EAAF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B8D11BB1D4693B2001EAAF6 /* OmniDateHandlerWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmniDateHandlerWorker.swift; sourceTree = "<group>"; };
+		0B8D11BD1D469415001EAAF6 /* AFDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFDateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,8 @@
 		0B8D117E1D4692F8001EAAF6 = {
 			isa = PBXGroup;
 			children = (
+				0B8D118A1D4692F8001EAAF6 /* AppDelegate.swift */,
+				0B8D118E1D4692F8001EAAF6 /* Main.storyboard */,
 				0B8D11891D4692F8001EAAF6 /* OmniDateHandler */,
 				0B8D119E1D4692F8001EAAF6 /* OmniDateHandlerTests */,
 				0B8D11A91D4692F8001EAAF6 /* OmniDateHandlerUITests */,
@@ -97,9 +105,8 @@
 		0B8D11891D4692F8001EAAF6 /* OmniDateHandler */ = {
 			isa = PBXGroup;
 			children = (
-				0B8D118A1D4692F8001EAAF6 /* AppDelegate.swift */,
+				0B8D11B81D46935F001EAAF6 /* Source */,
 				0B8D118C1D4692F8001EAAF6 /* ViewController.swift */,
-				0B8D118E1D4692F8001EAAF6 /* Main.storyboard */,
 				0B8D11911D4692F8001EAAF6 /* Assets.xcassets */,
 				0B8D11931D4692F8001EAAF6 /* LaunchScreen.storyboard */,
 				0B8D11961D4692F8001EAAF6 /* Info.plist */,
@@ -123,6 +130,24 @@
 				0B8D11AC1D4692F8001EAAF6 /* Info.plist */,
 			);
 			path = OmniDateHandlerUITests;
+			sourceTree = "<group>";
+		};
+		0B8D11B81D46935F001EAAF6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0B8D11B91D46935F001EAAF6 /* OmniDateHandler */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0B8D11B91D46935F001EAAF6 /* OmniDateHandler */ = {
+			isa = PBXGroup;
+			children = (
+				0B8D11BD1D469415001EAAF6 /* AFDateExtension.swift */,
+				0B8D11BB1D4693B2001EAAF6 /* OmniDateHandlerWorker.swift */,
+				0B1D867C1D4696B600721FE4 /* OmniDateHandlerViewController.swift */,
+			);
+			path = OmniDateHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8D11BC1D4693B2001EAAF6 /* OmniDateHandlerWorker.swift in Sources */,
 				0B8D118D1D4692F8001EAAF6 /* ViewController.swift in Sources */,
+				0B8D11BE1D469415001EAAF6 /* AFDateExtension.swift in Sources */,
 				0B8D118B1D4692F8001EAAF6 /* AppDelegate.swift in Sources */,
+				0B1D867D1D4696B600721FE4 /* OmniDateHandlerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +327,7 @@
 				0B8D118F1D4692F8001EAAF6 /* Base */,
 			);
 			name = Main.storyboard;
+			path = OmniDateHandler;
 			sourceTree = "<group>";
 		};
 		0B8D11931D4692F8001EAAF6 /* LaunchScreen.storyboard */ = {
@@ -482,6 +511,7 @@
 				0B8D11B11D4692F9001EAAF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B8D11B21D4692F9001EAAF6 /* Build configuration list for PBXNativeTarget "OmniDateHandlerTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +520,7 @@
 				0B8D11B41D4692F9001EAAF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B8D11B51D4692F9001EAAF6 /* Build configuration list for PBXNativeTarget "OmniDateHandlerUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +529,7 @@
 				0B8D11B71D4692F9001EAAF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
